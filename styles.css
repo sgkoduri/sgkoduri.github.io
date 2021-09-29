@@ -1,0 +1,97 @@
+body {
+  margin: 5px;
+  height: 100%
+}
+
+.sidebar {
+  grid-area: sidebar;
+  text-align: center;
+  
+}
+
+.content {
+  grid-area: content;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  
+}
+
+.footer {
+  grid-area: footer;
+  text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1.5fr 2fr 2fr;
+  grid-template-rows: 2fr 8fr, 1fr;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'footer  footer  footer';
+  background-color: #fff;
+  color: #5d5ddf;
+  height: 100%;
+}
+
+.box {
+  background-color: #d4d4f7;
+  color: #708090;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: #7b68ee;
+  color: #fff
+}
+
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 1px 1px 0;
+}
+a:link {
+  color: #9400d3;
+  font-weight: bold;
+  font-family: Monaco;
+}
+
+a:visited {
+  color: #9400d3
+}
+
+a:hover {
+  color: #fff;
+}
+
+h4 {
+  font-family: Verdana;
+  color: #4a535c;
+}
+
+h3 {
+  font-family: Georgia;
+  color: #2c333a;
+}
+
+h2 {
+  font-family: Georgia;
+  color: #2c333a;
+}
+
+p {
+  font-family: Garamond;
+}
+
+h1 {
+  font-family: "Lucida Console";
+}
